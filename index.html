@@ -1,15 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-        <!-- daisy ui -->
+    <title>Payoo MFS</title>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <!-- daisy ui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <!-- tailwind cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .outfit {
+            font-family: "Outfit", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+    </style>
 </head>
-<body>
 
+<body class="bg-[#F4F5F7] h-[100vh] flex justify-center items-center outfit">
+    <form class="  bg-white rounded-3xl p-[32px]">
+        <div>
+            <label for="" class="font-medium font-">Mobile Number</label>
+            <br>
+            <input type="text" placeholder="Type here" class="input #F4F5F7 mt-3 rounded-4xl" />
+        </div>
+        <div class="mt-5">
+            <label for="" class="font-medium font-">4 Digit Pin</label>
+            <br>
+            <input type="text" placeholder="Type here" class="input #F4F5F7 mt-3 rounded-4xl" />
+        </div>
+        <button class="btn btn-primary mt-[16px] w-full rounded-4xl">Login</button>
+    </form>
 </body>
+
 </html>
